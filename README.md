@@ -5,7 +5,7 @@ Emerson is a web app clone of 2005-XP-era MSN Messenger.
 ## Tech
 
 - Frontend: Angular
-- Backend: ???
+- Backend: Go
 
 ## License
 
