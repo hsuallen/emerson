@@ -1,0 +1,2 @@
+language = ""
+run = "bash r.sh run"
