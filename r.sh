@@ -6,7 +6,8 @@ usage: $0 [command]
 
 commands:
     fmt  formats code
-    run  runs the server
+    go   runs the go backend server
+    ng   runs the angular dev server
 EOS
 }
 
@@ -32,8 +33,11 @@ case $1 in
     fmt)
         cd backend && go fmt .
         ;;
-    run)
+    go)
         cd backend && go run .
+        ;;
+    ng)
+        cd frontend && npx ng serve --host 0.0.0.0 --disableHostCheck=true
         ;;
     *)
         die "$1: invalid command"
